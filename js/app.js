@@ -27,6 +27,7 @@ if (middleNameAnsToLower === 'y') {
   console.log('User guessed right');
 } else {
   alert('Better luck next time ;/');
+  console.log('User did not guess y or n');
 }
 
 // Q2: Am I from Philadelphia? Use y or n
@@ -35,9 +36,22 @@ var fromPhillyAnsToLower = fromPhilly.toLowerCase();
 
 if (fromPhillyAnsToLower === 'y') {
   alert('Yup, yup, yes.');
+  console.log('User guessed right');
+} else if (fromPhillyAnsToLower === 'n') {
+  alert('Nope, I am definitely from PHILADELPHIA!');
+  console.log('User guessed wrong');
+} else {
+  alert('I forgive you for not knowing where I\'m from!');
+  console.log('User did not guess y or n');
 }
 
 // Q3: Do I like white rice? Use y or n
+var likeWhiteRice = prompt('Do I like white rice?');
+var likeWhiteRiceToLower = likeWhiteRice.toLowerCase();
+
+if (likeWhiteRiceToLower === 'y') {
+  alert('Yeah, white rice is pretty, pretty, pretty good.');
+}
 
 // Q4: Do I have 6 siblings? Use y or n
 
